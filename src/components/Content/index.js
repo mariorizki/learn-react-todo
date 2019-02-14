@@ -36,8 +36,9 @@ class Content extends Component {
         if (todo.id === id) {
           todo.text = textInput;
         }
-        return this.setState({ data: edited });
+        return todo;
       });
+      this.setState({ data: edited });
     }
   };
 
